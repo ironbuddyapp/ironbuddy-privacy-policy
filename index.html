@@ -31,7 +31,7 @@
   <main>
     <h1>IronBuddy Privacy Policy</h1>
     <p class="meta">
-      Last updated: 7 September 2026<br />
+      Last updated: 19 September 2026<br />
       App: IronBuddy (Android package <code>com.ironbuddy.app</code>)<br />
       Contact: <a href="mailto:iron.buddy.app@gmail.com">iron.buddy.app@gmail.com</a>
     </p>
@@ -40,25 +40,27 @@
       IronBuddy (“the App”, “we”, “us”) is a local workout planning and logging app.
       This Privacy Policy describes what information the App handles, how it is stored,
       and what we do <em>not</em> collect. It is intended to meet Google Play requirements
-      for health and fitness apps, including clear disclosure of on-device data and
-      user-initiated exports.
+      for health and fitness apps, including clear disclosure of on-device data, automatic
+      backups, and user-initiated exports.
     </p>
 
     <h2>1. Summary</h2>
     <ul>
-      <li>Workout and fitness data you enter stays on your device.</li>
+      <li>Workout and fitness data you enter is stored on your device. IronBuddy does not send it to any IronBuddy server.</li>
       <li>No IronBuddy account is required and we do not operate a cloud sync backend for your workouts.</li>
       <li>We do not sell personal data.</li>
       <li>The App does not include ads or third-party analytics SDKs.</li>
-      <li>Files leave your device only if you choose Save, Share, or Auto-backup to local storage.</li>
+      <li>IronBuddy is free to download. It includes a free trial and one optional, one-time in-app purchase that unlocks the full app. The purchase is handled entirely by Google Play (see section 4).</li>
+      <li>Copies of your data can exist outside the App’s private storage in three ways, all explained in section 6: an automatic backup file in Download/IronBuddy on your device; Android’s own backup to your Google account, if Google backup is turned on; and files you choose to export or share.</li>
     </ul>
 
     <h2>2. Who this policy applies to</h2>
     <p>
       This policy applies to users of the IronBuddy Android application distributed on
       Google Play (and related testing tracks). It covers data processed by the App on
-      your device. It does not cover third-party apps or services you later send files to
-      (for example email, Google Drive, or messaging apps).
+      your device. It does not cover Google Play, Android’s backup service, or third-party
+      apps or services you later send files to (for example email, Google Drive, or
+      messaging apps).
     </p>
 
     <h2>3. Data stored on your device</h2>
@@ -71,19 +73,19 @@
       <li><strong>Fitness / workout information:</strong> training splits and schedules, exercises, sets, reps, weights, workout history, notes, and progress-related calculations (for example estimated strength metrics derived from your logged lifts).</li>
       <li><strong>Health and fitness data:</strong> body weight and body fat percentage entries (optional), and workout/training logs.</li>
       <li><strong>Personal info you enter:</strong> an optional display name and unit preferences (kg/lb).</li>
-      <li><strong>App settings:</strong> preferences such as whether automatic JSON backup is enabled.</li>
-      <li><strong>Purchase information:</strong> IronBuddy is sold as a one-time paid app on Google Play. Your purchase is processed entirely by Google Play at the point of download — the App itself does not process, receive, or store any payment or transaction information.</li>
+      <li><strong>App settings:</strong> preferences such as theme, units, and whether the automatic backup file is turned on.</li>
+      <li><strong>Purchase and trial status:</strong> the date your free trial started and whether you have unlocked the full app, including a purchase verification token provided by Google Play Billing that allows the App to verify and restore your entitlement to the one-time purchase. This is stored on your device. The App does not receive or store your payment details.</li>
     </ul>
     <p>
       This information is used only to provide App features (planning workouts, logging
-      sessions, showing progress charts, and optional local backup). We do not receive
-      this data on IronBuddy servers because the App does not upload your training data
-      to an IronBuddy cloud service.
+      sessions, showing progress charts, backups you can restore from, and unlocking the
+      full app). We do not receive this data on IronBuddy servers because the App does not
+      upload your training data to an IronBuddy cloud service.
     </p>
 
     <h2>4. Purchases and payment processing</h2>
     <p>
-      IronBuddy is a paid app — you pay once through Google Play to download it, and there is no separate in-app purchase or subscription. This transaction is handled entirely by Google Play as part of the download process, before the App is installed on your device. The App contains no payment processing code and does not receive, access, or store any payment, billing, or transaction information.
+      IronBuddy is free to download and use for a free trial period (currently 5 days). After the trial, the full app can be unlocked with one optional, one-time in-app purchase; there are no subscriptions. The purchase is made and processed entirely by Google Play using Google Play Billing. The App receives from Google Play only confirmation that the purchase exists (the product identifier and a purchase token) and stores it on your device so it can unlock features and check your purchase again when you open the App or reinstall it. The App does not receive, access, or store your payment card, billing address, or other payment details. The trial start date is kept on your device.
     </p>
     <p>
       For details on how Google Play handles your payment data, see
@@ -97,41 +99,51 @@
       <li>Collect data onto IronBuddy-operated servers</li>
       <li>Use advertising SDKs or sell personal data</li>
       <li>Use third-party analytics / crash SDKs that report your workouts to us</li>
+      <li>Receive your payment card or billing details (these stay with Google Play)</li>
       <li>Access your contacts, precise location, microphone, or camera</li>
     </ul>
 
-    <h2>6. Exports, backups, and sharing (user-initiated)</h2>
+    <h2>6. Backups, exports, and sharing</h2>
     <p>
-      You may optionally save or share data using Android system features:
+      Copies of your data can exist in these ways:
     </p>
     <ul>
-      <li><strong>JSON backup:</strong> a file (typically under Downloads / IronBuddy) containing App data so you can restore later. Auto-backup, if enabled, updates that local file after changes.</li>
-      <li><strong>Share:</strong> system share sheet for JSON or a PDF of your active split.</li>
-      <li><strong>Import / restore:</strong> you may choose a backup file to load into the App.</li>
+      <li><strong>Automatic backup file (on your device):</strong> each time your data changes, the App saves one up-to-date JSON copy of it at Download/IronBuddy/ironbuddy-backup.json, replacing the previous copy — the App does not keep numbered copies. The file stays on your device; it can be read by you and by other apps you allow to access your files. You can turn this off in Settings → Backup &amp; Data. After reinstalling the App, Android may ask you to choose the IronBuddy folder once so the App can replace the file left by the earlier installation; the App uses only the folder you choose.</li>
+      <li><strong>Android Auto Backup (Google account):</strong> IronBuddy allows Android’s built-in Auto Backup feature. If backup is enabled on your Android device, the Android operating system may create an encrypted backup of certain App data and store it in your Google account. This backup is managed entirely by Google and Android. IronBuddy does not receive, access, view, process, or control these backups. Android may use the backup to restore your data when reinstalling the App or setting up a new device. You can disable Android backups or remove existing backups through your device’s Google Backup settings.</li>
+      <li><strong>Export a copy / Share:</strong> the system share sheet for a JSON copy of your data or a PDF of your active split; you choose where it goes.</li>
+      <li><strong>Import / restore:</strong> you may choose a backup file to load into the App. The App keeps one copy of your data from just before an import inside the App so you can undo it.</li>
     </ul>
     <p>
-      These actions are started by you. Once a file is saved or shared, the destination
+      Exports, sharing, and imports are started by you. Once a file is saved or shared, the destination
       (Downloads folder, email, Drive, messaging apps, etc.) is outside IronBuddy’s control
       and subject to that destination’s policies. Uninstalling the App does not automatically
-      delete files already saved in Downloads.
+      delete files already saved in Downloads or a backup stored in your Google account.
     </p>
 
-    <h2>7. Permissions</h2>
+    <h2>7. Data handling and transmission</h2>
+    <p>
+      IronBuddy does not transmit workout logs, body measurements, exercise history, notes, or other fitness information to IronBuddy-operated servers. All such information remains on your device unless you explicitly export, share, or back up your data using Android’s backup services or another destination you choose.
+    </p>
+
+    <h2>8. Permissions</h2>
     <p>The App may request or declare permissions such as:</p>
     <ul>
       <li><strong>Internet / network:</strong> used by the Android WebView/OS networking stack (for example, if you open external links such as open-source credits). The App does not use this to upload your workout, body, or personal data.</li>
-      <li><strong>Storage / media access (as required by Android version):</strong> to save or read backup files when you use backup, restore, or share features.</li>
+      <li><strong>Google Play Billing:</strong> lets the App ask Google Play about, and complete, the optional in-app purchase.</li>
+      <li><strong>Storage / media access (as required by Android version):</strong> to save the automatic backup file and exports in Downloads, and to read files you choose to import. If you choose a folder with Android’s folder picker, the App can access only that folder.</li>
+      <li><strong>Android Auto Backup:</strong> No additional permission is requested from the user for Android’s Auto Backup feature. When enabled in device settings, the feature is provided by the Android operating system.</li>
     </ul>
     <p>
       Exact permission labels shown by Android may vary by OS version. Unused sensitive
       permissions are not requested for core logging features.
     </p>
 
-    <h2>8. How you can delete data</h2>
+    <h2>9. How you can delete data</h2>
     <ul>
       <li><strong>In-app:</strong> Settings → Reset All Data clears App data stored by IronBuddy on the device and returns you to setup.</li>
       <li><strong>Uninstall:</strong> uninstalling removes the App’s private storage.</li>
-      <li><strong>Backup files:</strong> JSON files you saved under Downloads (or shared elsewhere) must be deleted manually if you no longer want those copies.</li>
+      <li><strong>Backup files:</strong> the automatic backup file and any JSON or PDF files you saved under Downloads (or shared elsewhere) are not removed by uninstalling or by Reset All Data; delete them manually if you no longer want those copies.</li>
+      <li><strong>Google backup:</strong> a backup stored in your Google account can be deleted in your phone’s settings (Google → Backup) or from your Google account.</li>
     </ul>
     <p>
       Because we do not host your workout data on IronBuddy servers, there is no separate
@@ -139,7 +151,7 @@
       <a href="mailto:iron.buddy.app@gmail.com">iron.buddy.app@gmail.com</a>.
     </p>
 
-    <h2>9. Health and fitness notice</h2>
+    <h2>10. Health and fitness notice</h2>
     <p>
       IronBuddy is a fitness logging and planning tool. It is <strong>not a medical device</strong>
       and does not diagnose, treat, cure, or prevent any medical condition. Progress charts
@@ -147,28 +159,28 @@
       not clinical advice. Consult a qualified healthcare professional for medical advice.
     </p>
 
-    <h2>10. Children</h2>
+    <h2>11. Children</h2>
     <p>
       The App is not directed at children under 13. Do not use IronBuddy if you are under
       the age required in your country to consent to use of local apps of this type.
     </p>
 
-    <h2>11. Third-party services</h2>
+    <h2>12. Third-party services</h2>
     <p>
-      If you open external links from the App (for example open-source credits) or share
-      files through other apps, those services are governed by their own terms and privacy
-      policies. IronBuddy does not control them.
+      If you open external links from the App (for example open-source credits), share
+      files through other apps, make a purchase through Google Play, or use Android’s
+      backup, those services are governed by their own terms and privacy policies.
+      IronBuddy does not control them.
     </p>
 
-    <h2>12. Changes to this policy</h2>
+    <h2>13. Changes to this policy</h2>
     <p>
       We may update this Privacy Policy when the App or our practices change. The
-      “Last updated” date at the top will be revised. Continued use of the App after an
-      update means you accept the revised policy. Material changes will be reflected on
-      this page.
+      “Last updated” date at the top of this page will be revised accordingly. Any updates
+      will be published on this page.
     </p>
 
-    <h2>13. Contact</h2>
+    <h2>14. Contact</h2>
     <p>
       Privacy questions or requests:
       <a href="mailto:iron.buddy.app@gmail.com">iron.buddy.app@gmail.com</a>
